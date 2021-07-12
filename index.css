@@ -406,6 +406,37 @@ th {
     color: #000;
 
 }
+.calculate__input {
+    border: 2px solid #d73d01 ;
+    padding: 10px;
+    outline: none;
+    font-size: 17px;
+    background: none;
+}
+
+
+.calculate {
+    padding: 20px;
+    
+}
+.calculate__title {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.ploschad {
+    font-weight: 500;
+    font-style: 17px;
+        padding: 5px;
+    background-color:#fceb05;
+    color: black;
+}
+.stoimost {
+    font-weight: 500;
+    font-style: 17px;
+    padding: 5px;
+    background-color:#fceb05;
+    color: black;
+}
 
 /* Questions */
 
