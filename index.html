@@ -27,6 +27,196 @@
             width: 300px;
             height: 300px;
         }
+	    .gtukopes-amiktun {
+  background:#d73d01;
+  border:2px solid #d73d01;
+  border-radius:50%;
+  cursor:pointer;
+  height:68px;
+  text-align:center;
+  width:68px;
+  position: fixed;
+  right: 8%;
+  bottom: 10%;
+  z-index:999;
+  transition:.3s;
+  -webkit-animation:hoverWave linear 1s infinite;
+  animation:hoverWave linear 1s infinite;
+}
+
+.gtukopes-amiktun .telifonas {
+  height: 71px;
+  width: 71px;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gtukopes-amiktun .telifonas span {
+  text-align: center;
+  color: #d73d01;
+  opacity: 0;
+  font-size: 0;
+  position: absolute;
+  right: 7px;
+  top: 19px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: opacity .4s linear;
+  font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.gtukopes-amiktun .telifonas:hover span {
+  opacity: 1;
+  font-size: 11px;
+}
+/* .gtukopes-amiktun:hover i {
+  display:none;
+} */
+
+.gtukopes-amiktun:hover {
+  z-index:1;
+  background:#d73d01;
+  color:transparent;
+  transition:.3s;
+}
+.gtukopes-amiktun:hover i {
+  color:#000;
+  font-size:39px;
+  transition:.4s;
+}
+.gtukopes-amiktun i {
+  color: #e8e6e6;
+  font-size: 36px;
+  transition: .4s;
+  line-height: 69.7px;
+  transition: .5s ease-in-out;
+}
+
+.gtukopes-amiktun i {
+  animation: 1200ms ease 0s normal none 1 running shake;
+  animation-iteration-count: infinite;
+  -webkit-animation: 1200ms ease 0s normal none 1 running shake;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+0% {
+  transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+}
+10% {
+  transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+}
+20% {
+  transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  -webkit-transform: rotateZ(15deg);
+}
+30% {
+  transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+}
+40% {
+  transform: rotateZ(7.5deg);
+  -ms-transform: rotateZ(7.5deg);
+  -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+  transform: rotateZ(-6deg);
+  -ms-transform: rotateZ(-6deg);
+  -webkit-transform: rotateZ(-6deg);
+}
+60% {
+  transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  -webkit-transform: rotateZ(5deg);
+}
+70% {
+  transform: rotateZ(-4.28571deg);
+  -ms-transform: rotateZ(-4.28571deg);
+  -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+  transform: rotateZ(3.75deg);
+  -ms-transform: rotateZ(3.75deg);
+  -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+  transform: rotateZ(-3.33333deg);
+  -ms-transform: rotateZ(-3.33333deg);
+  -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+  transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+}
+}
+
+@-webkit-keyframes shake {
+0% {
+  transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+}
+10% {
+  transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+}
+20% {
+  transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  -webkit-transform: rotateZ(15deg);
+}
+30% {
+  transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+}
+40% {
+  transform: rotateZ(7.5deg);
+  -ms-transform: rotateZ(7.5deg);
+  -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+  transform: rotateZ(-6deg);
+  -ms-transform: rotateZ(-6deg);
+  -webkit-transform: rotateZ(-6deg);
+}
+60% {
+  transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  -webkit-transform: rotateZ(5deg);
+}
+70% {
+  transform: rotateZ(-4.28571deg);
+  -ms-transform: rotateZ(-4.28571deg);
+  -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+  transform: rotateZ(3.75deg);
+  -ms-transform: rotateZ(3.75deg);
+  -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+  transform: rotateZ(-3.33333deg);
+  -ms-transform: rotateZ(-3.33333deg);
+  -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+  transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+}
+}
     </style>
 </head>
 <body>
@@ -364,7 +554,14 @@
         <!-- Mahsulotlar katalogi forma -->
 	</main>
 
-
+    <a href="tel:+998712000042" style="color: black; text-decoration: none;">
+        <div data-aos="fade-left" type="button" class="gtukopes-amiktun">
+        <div class="telifonas">
+            <i class="fa fa-phone" style="color: white;"></i>
+            <span></span>
+        </div>
+    </div>
+</a>
 
 
 
